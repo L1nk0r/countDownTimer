@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+:root{
+   --dark: #351431;
+   --taupe: #775253;
+   --sage: #BDC696;
+   --bone: #D1D3C4;
+   --platinum: #DFE0DC;
+}
+
+html, body{
+   display:list-item;
+   align-items: center;
+   justify-content: center;
+   font-size: 42px;
+   margin: 0;
+
+   background-color: var(--taupe);
+}
+
+.header{
+   font-family: 'Lobster', cursive;
+   color: var(--platinum);
+   font-size: 80px;
+
+   margin: 30px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+   /* background-color: var(--dark); */
+}
+
+.content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   /* background-color: var(--dark); */
+}
+
+.bttns{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   margin: 30px;
+}
+
+.main_div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 42px;
+   height: 350px;
+   width: 350px;
+   border: none;
+   border-radius: 50%;
+   margin-top: 100px;
+   font-family: 'Josefin Sans', sans-serif;
+
+   border-radius: 150px;
+   box-shadow: 35px 35px 52px #563b3c, -35px -35px 52px #98696a;
+
+   background-color: var(--taupe);
+   color: var(--platinum);
+}
+
+input{
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 20px;
+   color: black;
+
+   margin: 10px;
+
+   background-color: var(--sage);
+
+   border:var(--bone) 1px solid;
+   padding: 10px;
+   border-radius: 7px;
+
+   transition-duration: 0.2s;
+}
+
+input:hover{
+   background-color: var(--bone);
+   border: var(--platinum) 2px solid;
+}
+
+.hidden{
+   opacity: 0;
+   transform: translateY(5vh);
+}
+
+.stopped{
+   background-color: var(--dark);
+}
